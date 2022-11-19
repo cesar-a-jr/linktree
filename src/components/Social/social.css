@@ -1,0 +1,11 @@
+.icon{ 
+  padding: 1rem;
+  
+}
+.icon svg{
+  transition: 0.5s;
+}
+
+.icon svg:hover{
+  transform: scale(1.06);
+}

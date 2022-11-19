@@ -1,0 +1,41 @@
+.animate-enter{
+  animation-duration: 0.7s;
+  animation-name: animate-pop;
+  animation-delay: 0.3;
+}
+
+.links-list{
+  width: 30vw;
+  min-width: 400px;
+  padding: 1rem 0;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.5s;
+  margin-bottom: 1rem;
+}
+
+
+.links-list:hover{
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 400px)
+{
+  .links-list
+   {
+    min-width: 90vw;
+    max-width: 90vw;
+   }
+}
+
+@keyframes animate-pop {
+  0%{
+    opacity: 0;
+    transform: scale(0.7, 0.7);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}

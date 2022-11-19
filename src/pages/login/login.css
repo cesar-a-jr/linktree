@@ -1,0 +1,45 @@
+.login-container{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.login-content{
+  min-width: 300px;
+  width: 40%;
+  height: 100vh;
+  background-color: #FFF;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-title{
+  color: #004f32;
+  width: 90%;
+  margin-bottom: 8px;
+}
+
+.logWiht{
+  color: #004f32;
+  width: 90%;
+  margin-top: 8px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+.side{
+  height: 100vh;
+  width: 100%;
+  background-color: #004f32;
+}
+
+
+.link-register{
+  margin-left: 8px;
+  font-weight: bold;
+  color: #004f32;
+}

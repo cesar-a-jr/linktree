@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import {createBrowserRouter} from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Home from './pages/home'
+import Login from './pages/login'
+import Admin from './pages/admin'
+import Error from './pages/Error'
+import Register from './pages/register'
+import Networks from './pages/Networks'
+import Views from './pages/views'
 
-export default App;
+import Privite from './routes/privite'
+import { Config } from './pages/Config'
+import { LinksStyles } from './pages/linkStyles'
+
+const router = createBrowserRouter([
+  {
+    path:'/',
+    element: <Home/>
+  },
+  {
+    path:'/login',
+    element: <Login/>
+  },
+  {
+    path:'/links/:uid',
+    element: <Views/>
+  },
+  {
+    path:'/admin',
+    element: <Privite><Admin/></Privite>
+  },
+  {
+    path:'/register',
+    element: <Register/>
+  },
+  {
+    path:'/admin/social',
+    element: <Privite><Networks/></Privite>
+  },
+  // {
+  //   path:'/admin/config',
+  //   element: <Privite><Config/></Privite>
+  // },
+  {
+    path:'*',
+    element: <Error/>
+  }
+
+])
+
+export {router};

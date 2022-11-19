@@ -1,0 +1,9 @@
+.btn-social button{
+  border: none;
+  background: transparent;
+  padding: 0.5rem 1rem;
+}
+
+.btn-social button svg:last-child{
+  color: #3b5998;
+}
